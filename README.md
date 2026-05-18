@@ -1,6 +1,6 @@
 # AttestService
 
-AppAttest service built with Swift & Vapor
+AppAttest service built with Swift & Vapor. Currently replaced with [rust-attester](https://github.com/Bisquit-Host/rust-attester) in order to lower resource usage
 
 ## Required environment props
 - TEAM_ID
