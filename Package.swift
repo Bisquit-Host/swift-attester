@@ -17,7 +17,7 @@ let package = Package(
         
         // AppAttest
         // https://github.com/topscrech/Attester
-        .package(url: "https://github.com/topscrech/Attester", branch: "main")
+            .package(url: "https://github.com/topscrech/Attester", branch: "main")
     ],
     targets: [
         .executableTarget(
@@ -38,7 +38,8 @@ let package = Package(
             //            ],
             //            swiftSettings: swiftSettings
         )
-    ]
+    ],
+    swiftLanguageModes: [.v6]
 )
 
 fileprivate let swiftSettings: [SwiftSetting] = [
