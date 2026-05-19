@@ -1,5 +1,5 @@
 {
-  "originHash" : "181a4c2ed0ec49fa195690bf9f94487b8f10ddbd828e8edf9811030c9fe96c57",
+  "originHash" : "1e02ad718088712a895b933e7cbce2b32105609c2c426ccb7791ec4f266cb746",
   "pins" : [
     {
       "identity" : "anchor",
@@ -31,10 +31,10 @@
     {
       "identity" : "attester",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/topscrech/Attester.git",
+      "location" : "https://github.com/topscrech/Attester",
       "state" : {
         "branch" : "main",
-        "revision" : "ca9cb7529784cf0a4b755afa5bcfac5f6b8b6d4c"
+        "revision" : "b0ff62982e9d7b846cd5f7c67124defdbdb4fa8c"
       }
     },
     {
@@ -177,8 +177,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-metrics.git",
       "state" : {
-        "revision" : "d51c8d13fa366eec807eedb4e37daa60ff5bfdd5",
-        "version" : "2.10.1"
+        "revision" : "087e8074afa97040c3b870c8664fe5482fb87cc4",
+        "version" : "2.11.0"
       }
     },
     {
