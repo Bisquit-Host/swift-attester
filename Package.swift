@@ -1,4 +1,4 @@
-// swift-tools-version:6.2.1
+// swift-tools-version:6.3.2
 import PackageDescription
 
 let package = Package(
@@ -7,16 +7,17 @@ let package = Package(
         .macOS(.v13)
     ],
     dependencies: [
-        // 💧 A server-side Swift web framework
+        // HTTP framework
         // https://github.com/vapor/vapor
-        .package(url: "https://github.com/vapor/vapor.git", from: "4.121.0"),
+        .package(url: "https://github.com/vapor/vapor", from: "4.121.4"),
         
-        // 🔵 Non-blocking, event-driven networking for Swift. Used for custom executors
+        // Networking
         // https://github.com/apple/swift-nio
-            .package(url: "https://github.com/apple/swift-nio.git", from: "2.92.1"),
+            .package(url: "https://github.com/apple/swift-nio", from: "2.99.0"),
         
         // AppAttest
-        .package(url: "https://github.com/topscrech/Attester.git", branch: "main")
+        // https://github.com/topscrech/Attester
+        .package(url: "https://github.com/topscrech/Attester", branch: "main")
     ],
     targets: [
         .executableTarget(

@@ -1,9 +1,9 @@
 # syntax=docker/dockerfile:1.6
 
 # ───────────────────────────────────────────────────────────────
-#  Build stage  (Swift 6.2.1 + jemalloc + persistent caches)
+#  Build stage  (Swift 6.3.2 + jemalloc + persistent caches)
 # ───────────────────────────────────────────────────────────────
-FROM swift:6.2.1-noble AS build
+FROM swift:6.3.2-noble AS build
 
 RUN apt-get -q update \
  && apt-get -q install -y --no-install-recommends libjemalloc-dev \
