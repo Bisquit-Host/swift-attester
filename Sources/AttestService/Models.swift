@@ -2,6 +2,7 @@ import Vapor
 
 struct ChallengeRequest: Content {
     let userID: String?
+    let purpose: AppAttestChallengePurpose?
 }
 
 struct ChallengeResponse: Content {
@@ -17,13 +18,14 @@ struct AttestRequest: Content {
 struct AttestResponse: Content {
     let success: Bool
     let userID: String?
+    let keyID: String
     let publicKey: String
 }
 
 struct AssertRequest: Content {
     let challenge: String
     let assertion: String
-    let publicKey: String
+    let keyID: String
     let clientData: String
 }
 
@@ -31,4 +33,6 @@ struct AssertResponse: Content {
     let success: Bool
     let userID: String?
     let counter: Int
+    let action: String
+    let payloadHash: String
 }
