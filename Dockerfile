@@ -18,6 +18,7 @@ RUN --mount=type=cache,id=swiftpm,target=/root/.cache/swiftpm \
 
 # 2.  Application sources  ──────────────────────────────────────
 COPY Sources ./Sources
+COPY Tests ./Tests
 
 # 3.  Compile and stage artefacts  ──────────────────────────────
 RUN --mount=type=cache,id=swift-build,target=/build/.build \
