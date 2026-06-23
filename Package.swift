@@ -14,6 +14,8 @@ let package = Package(
         // Database
         // https://github.com/vapor/fluent
         .package(url: "https://github.com/vapor/fluent.git", from: "4.12.0"),
+        
+        // https://github.com/vapor/fluent-postgres-driver
         .package(url: "https://github.com/vapor/fluent-postgres-driver.git", from: "2.10.0"),
         
         // Networking
