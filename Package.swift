@@ -9,7 +9,7 @@ let package = Package(
     dependencies: [
         // HTTP framework
         // https://github.com/vapor/vapor
-        .package(url: "https://github.com/vapor/vapor", from: "4.121.4"),
+        .package(url: "https://github.com/vapor/vapor", from: "4.122.0"),
         
         // Database
         // https://github.com/vapor/fluent
